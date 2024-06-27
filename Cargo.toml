@@ -1,0 +1,30 @@
+[package]
+name = "leptos-wasm_github-pages"
+version = "0.1.0"
+edition = "2021"
+authors = ["smir-ant"]
+
+[dependencies]
+leptos = { version = "0.6", features = ["csr", "nightly"] }
+leptos_meta = { version = "0.6", features = ["csr", "nightly"] }
+leptos_router = { version = "0.6", features = ["csr", "nightly"] }
+# console_log = "1"
+# log = "0.4"
+# console_error_panic_hook = "0.1"
+
+# [dev-dependencies]
+# wasm-bindgen = "0.2"
+# wasm-bindgen-test = "0.3"
+# web-sys = { version = "0.3", features = ["Document", "Window"] }
+
+
+[profile.release]  # Этот раздел содержит настройки для сборки вашего проекта в режиме release.
+opt-level = 'z'  # сargo будет стараться минимизировать размер бинарного файла.
+lto = true  # включает оптимизацию всего программного обеспечения (Link Time Optimization, LTO)
+codegen-units = 1  # вы говорите компилятору обрабатывать всю вашу программу как одну единицу кодогенерации. Это может привести к более эффективной оптимизации кода, потому что компилятор видит всю программу целиком, но это также может замедлить процесс компиляции, потому что он не может использовать параллелизм для ускорения | компромисс между скоростью компиляции и эффективностью оптимизации.
+panic = "abort"  # что делать при панике. abort означает, что процесс должен немедленно завершиться
+
+
+[[workspace.metadata.leptos]]
+tailwind-input-file = "input.css"
+# output-name = "{{project-name}}"
