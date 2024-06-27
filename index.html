@@ -2,17 +2,30 @@
 <html>
   <head>
     <!-- +wasm: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
-    <link data-trunk rel="rust" data-wasm-opt="z" data-weak-refs />
+    
+<script type="module" nonce="NrIbH6SSeRGAPhu6BLsesg==">
+import init, * as bindings from '/wasm_ghpages/leptos-wasm_github-pages-5d199c71e267f026.js';
+const wasm = await init('/wasm_ghpages/leptos-wasm_github-pages-5d199c71e267f026_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
 
     <!-- +tailwind: https://trunkrs.dev/assets/#tailwind -->
-    <link data-trunk rel="tailwind-css" href="/public/tailwind.css" />
+    <link rel="stylesheet" href="/wasm_ghpages/tailwind-44f9c621743a569.css" integrity="sha384&#x2D;1rvOnsSNXNcj&#x2B;f396ioDuDu&#x2B;UIxikUQnFs35vtGvsmRfrIchQunIRjU2FmntO9&#x2F;o"/>
     
     <!-- +css: https://trunkrs.dev/assets/#css -->
-    <link data-trunk rel="css" href="/public/styles.css" />
+    <link rel="stylesheet" href="/wasm_ghpages/styles-fee77a7688f3fa56.css" integrity="sha384&#x2D;8BxptkSrV2z0W1phF9xAy8oXGP2VStlITUFq3QlXwqzzA9dN9X&#x2B;ZMbolO1HKasuj"/>
 
     <!-- +favicon: https://trunkrs.dev/assets/#icon -->
-    <link data-trunk rel="icon" href="/public/favicon.ico" />
-  </head>
+    <link rel="icon" href="/wasm_ghpages/favicon-d43205a3c4214386.ico" integrity="sha384&#x2D;YJrVhyaL0z4xQDIu271WLLhAOYrtzXcbhuGPEWLdLualQQ06FPRISy3xgAZ0HHVg"/>
+  
+<link rel="modulepreload" href="/wasm_ghpages/leptos-wasm_github-pages-5d199c71e267f026.js" crossorigin=anonymous integrity="sha384-yh0yu3zOW3NQ3xDb/zTArW/Nxj98OZcR8YGpyiKe8oqp30ChjNYjEuLk8CH4T+ZP">
+<link rel="preload" href="/wasm_ghpages/leptos-wasm_github-pages-5d199c71e267f026_bg.wasm" crossorigin=anonymous integrity="sha384-wHfsaPMk+QvVLmwI1kFd9NsesdH6rhyZLoN7VEEEDRrR0D1Q63ClwbbgmhyXKVBR" as="fetch" type="application/wasm"></head>
   <body class="
   bg-neutral-100 dark:bg-neutral-900
   bg-gradient-to-r from-orange-300"></body>

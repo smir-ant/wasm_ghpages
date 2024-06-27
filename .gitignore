@@ -1,5 +1,0 @@
-target/
-dist/
-Cargo.lock
-tailwindcss
-.DS_Store

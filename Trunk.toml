@@ -1,9 +1,0 @@
-[build]
-public_url = "/wasm_ghpages/"  # фикс путей для github-pages конкретно во всех dist файлах(т.к. в gh-pages мы начинаем не с "user.github.io/", а с "user.github.io/repository_name")
-
-# ниже альтернативный путь для tailwind, но бесполезный, так как встроенная поддержка уже есть в leptos
-# [[hooks]]
-# stage = "pre_build"
-# command = "sh"
-
-# command_arguments = ["-c", "./tailwindcss -i input.css -o public/tailwind.css --minify"]
